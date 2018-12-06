@@ -1,0 +1,20 @@
+.board {
+    border: 15px solid #007FFF;
+    border-radius: 20px;
+    margin: 60px;
+    padding: 10px;
+    background-color: #1f90ff;
+}
+.connect {
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color:white;
+}
+.red {
+background: linear-gradient(90deg, #ff512f, #dd2476);
+}
+.black {
+background: linear-gradient(90deg, #0f2027, #203a43, #2c5364 )
+}

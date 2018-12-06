@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practicing with GIMP</title>
+        <style>
+            #pictureframe {position: relative;}
+            #trophy {position: absolute; left: 350px; top: 200px;}
+            #wah {position: absolute; left:5px; top: 200px}
+            #thelaw {position:absolute; left: 20px; top: 200px;}
+            #diamond {position: absolute; left: 385px; top: 145px;}
+        </style>
+    </head>
+    <body>
+        <h1>Cat with Trophy, 2018.</h1>
+        <div id="pictureframe">
+            <img src="cat.jpg" width="600">
+            <img id="trophy" src="output2.png" width="150">
+            <img id="wah" style="position: absolute; left: 0; top: 0" src="Waluigi.png" width="100">
+            <img style="position: absolute; left: 10px; top: 0" id="thelaw" src="Law.png" width="40">
+            <img id="diamond" src="diamonds2.png" width="80">
+        </div>
+
+        <h2>Instructions</h2>
+        
+        <ol>
+            <li>Edit the image of the trophy to make the white background transparent.</li>
+            <li>Resize the trophy image to 150 pixels wide, and save it as a PNG.</li>
+            <li>Resize the photo of the cat to be 600 pixels wide, and save it as a JPG with quality 80.</li>
+            <li>Update the HTML above to use the modified images.</li>
+            <li>Use the arrows to move the Law.</li>
+        </ol>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+td {
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+td:hover {
+    background: url(pitpat.gif);
+}
+table {
+    border: 5px solid black;
+    padding: 1px;
+}
+/* Gradient animation */
+body {
+    margin: 0;
+    padding: 0;
+}
+.grad {
+    position: relative;
+}
+.grad::after, .grad::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    z-index: -1;
+}
+.grad::after{
+    background: radial-gradient(circle, red, transparent);
+    background-size: 400%;
+    animation: colorSpin 15s linear infinite;
+}
+.grad::before {
+    background-color: yellow;
+}
+@keyframes colorSpin {
+    25% {background-position: 0 100%}
+    50% {background-position: 100% 100%}
+    75%{background-position: 100% 0}
+    100% {filter:hue-rotate(360deg)}
+}

@@ -1,0 +1,37 @@
+body {
+    background: url(landingpage.png);
+    background-repeat: no-repeat;
+}
+h1 {
+    font-family: 'Delius', cursive;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    margin: 0%;
+    color: #4CF192;
+}
+.box {
+    background-color: rgba(236, 236,236, 0.3);
+    animation-delay: 0.6s;
+}
+.fade {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes fadeIn { 
+    from { opacity:0; opacity: 1\9;} 
+    to { opacity: 1;} 
+}
+.boy {
+    position: absolute;
+    right: 220px;
+    bottom: 280px;
+    border-radius: 30px;
+    width: 140px;
+    height: 130px;
+    background-color: transparent;
+    border-color: transparent;
+
+}

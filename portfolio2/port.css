@@ -1,0 +1,175 @@
+body {
+    background: url(indy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Patrick Hand', cursive;
+}
+li {
+    list-style: none;
+}
+#home {
+    background: url(home-icon1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    left: 200px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+
+#home:hover {
+    background: url(home-icon2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+}
+
+#about {
+    background: url(about-icon1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    left: 500px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+#about:hover {
+    background: url(about-icon2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+}
+#port {
+    background: url(port-icon2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    right: 500px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+#contact {
+    background: url(contact-icon1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    right: 200px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+#contact:hover {
+    background: url(contact-icon2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+}
+hr {
+    display: block;
+    margin-top: 10em;
+    margin-bottom: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+/* Everything above this is for the nav bar, everything below this is the actual content on the page */
+/* Portfolio Pictures */
+.projects {
+    width: 430px;
+    background: linear-gradient(to left, #9796f0, #fbc7d4); 
+    background-size: 400% 400%;
+    margin-bottom: 25px;
+    animation: Gradient 10s ease infinite;
+}
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.columns {
+    float: left;
+    width: 33.33%;
+    padding: 35px;
+}
+.caption {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 10px;
+}
+.caption>a:hover {
+    color: lightcoral;
+}
+.bottom {
+    font-size: 60px;
+    position: absolute;
+    top: 700px;    
+    left: 570px;
+}
+.bottom>a {
+    color: #F6BEFF;
+    font-style: italic;
+}
+.bottom>a:hover {
+    color: lightcoral;
+}
+iframe {
+    border: 0;
+}
+/* Connect Four */ 
+.map {
+    border: 15px solid #007FFF;
+    border-radius: 20px;
+    background-color: #1f90ff;
+}
+.connect {
+    height: 55px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color:white;
+}
+.red {
+background: linear-gradient(90deg, #ff512f, #dd2476);
+}
+.black {
+background: linear-gradient(90deg, #0f2027, #203a43, #2c5364 )
+}

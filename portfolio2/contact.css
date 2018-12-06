@@ -1,0 +1,255 @@
+body {
+    background: url(indy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Patrick Hand', cursive;
+}
+li {
+    list-style: none;
+}
+#home {
+    background: url(home-icon1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    left: 200px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+
+#home:hover {
+    background: url(home-icon2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+}
+
+#about {
+    background: url(about-icon1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    left: 500px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+#about:hover {
+    background: url(about-icon2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+}
+#port {
+    background: url(port-icon1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    right: 500px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+
+#port:hover {
+    background: url(port-icon2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+}
+
+#contact {
+    background: url(contact-icon2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    right: 200px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+hr {
+    display: block;
+    margin-top: 10em;
+    margin-bottom: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+/* Everything above this is for the nav bar, everything below this is the actual content on the page */
+.mainContainer {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 1425px;
+    height: 580px;
+    background: rgba(236, 236,236, 0.8);
+    text-align: left;
+    font-size: 20px;
+}
+.contactContainer {
+    border: 1px;
+    border-radius: 20px;
+    background: rgba(236, 236,236, 0.75);
+    position: fixed;
+    top: 220px;
+    left: 910px;
+    height: 540px;
+    width: 500px;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+}
+h2 {
+    margin: 1px;
+}
+p {
+    margin: 1px;
+}
+/* Contact */
+a:hover {
+    color: lightcoral;
+}
+.contactContainer>hr {
+    position: relative;
+    top: -160px;
+}
+.githublink {
+    border: 1px solid black;
+    background: url(githubIcon.png);
+    border-radius: 20px;
+    position: relative;
+    left: 20px;
+    top: -190px;
+    height: 126px;
+    width: 126px;
+}
+.githublink:hover {
+    background: url(githubIcon2.png);
+}
+.instagramlink {
+    border: 1px solid black;
+    background: url(instagramIcon.png);
+    border-radius: 20px;
+    position: relative;
+    left: 190px;
+    top: -317px;
+    height: 126px;
+    width: 126px;
+}
+.instagramlink:hover {
+    background: url(instagramIcon2.png);
+}
+.linkedinlink {
+    border: 1px solid black;
+    background: url(linkedinIcon.png);
+    border-radius: 20px;
+    position: relative;
+    left: 350px;
+    top: -445px;
+    height: 126px;
+    width: 126px;
+}
+.linkedinlink:hover {
+    background: url(linkedinIcon2.png);
+}
+.mainContainer>h1 {
+    text-align: left;
+    padding: 10px;
+    margin: 0px;
+}
+/* Message */
+.messageContainer {
+    font-size: 35px;
+}
+input[type=text] {
+    box-sizing: border-box;
+    border: 3px solid #cccccc;
+    background-color: #FBFBFB;
+    padding: 0px;
+    margin: 0px;
+    transition: 0.5s;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[id=name] {
+    width: 350px;
+    padding: 12px 20px;
+}
+input[id="email"] {
+    width: 350px;
+    padding: 12px 20px;
+}
+input[id="message"] {
+    width: 880px;
+    padding: 140px 20px;
+}
+textarea {
+    background-color: #FBFBFB;
+    border: 3px solid #cccccc;
+    width: 870px;
+    height: 300px;
+    resize: none;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+textarea:focus {
+    border: 3px solid #555;
+}
+button {
+    position: relative;
+    font-family: 'Patrick Hand', cursive;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 30px;
+    top: 50px;
+    width: 150px;
+    height: 50px;
+    right: 155px;
+    z-index: 999;
+}
+button:hover {
+    font-weight: bold;
+    background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 10s ease infinite;
+}
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+/* 256 256 picture size 

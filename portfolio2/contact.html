@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link rel="shortcut icon" href="myfavicon.ico" type="image/x-icon">
+    <link rel="icon" href="myfavicon.ico" type="image/x-icon">
+    <title>Hannah Mayorga</title>
+</head>
+
+<body>
+        <ul>
+            <a href="./index.html"><li id="home"></li></a>
+            <a href="./about.html"><li id="about"></li></a>
+            <a href="./portfolio.html"><li id="port"></li></a>
+            <li id="contact"></li> 
+            <hr>
+        </ul> 
+        <div class = "mainContainer">
+            <h1>Send me a message!</h1>
+            <form class="messageContainer">
+                <label for="name">Name:</label> 
+                <input type="text" id="name"> 
+                <label for="email">Email:</label>
+                <input type="text" id="email"> <br>
+                <label for="message">Message:</label> <br>
+                <textarea type="text" id="message"></textarea>
+                <button onclick="recieveFunction()">Submit</button>
+            </form>
+            <div class ="contactContainer">
+                <h1>Follow me!</h1>
+                <h2>Email:</h2>
+                <a href="mailto:hannahsmayorga@gmail.com">hannahsmayorga@gmail.com</a> <br> <br>
+                <h2>Phone Number:</h2>
+                <p>(317) 435-1211</p> <br>
+                <h2>My Resume:</h2>
+                <a href="Hannah Mayorga Resume.pdf" target="_blank">Click here to view my resume!</a>
+                <hr>
+                <a href="https://github.com/Hannah-Mayorga" target="_blank"><div class="githublink"></div></a> 
+                <a href="https://www.instagram.com/hannah.banna.bread/" target="_blank"><div class="instagramlink"></div></a> 
+                <a href="https://www.linkedin.com/in/hannah-m-1a6a05126/" target="_blank"><div class="linkedinlink"></div></a>    
+            </div>
+        </div>
+    <script>
+        function recieveFunction() {
+            var at = document.getElementById("email").value.indexOf("@");
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
+            submitCorrect = "true";
+
+            if (name == "") {
+                alert("Please enter your name.");
+                submitCorrect = "false";
+            }
+            if (at == -1) {
+                alert("Invalid email.");
+                submitCorrect = "false";
+            }
+            if (message == "") {
+                alert("The whole point was to leave a message...");
+                submitCorrect = "false";
+            }
+            if (submitCorrect == "false") {
+                return false;
+            }
+            if (submitCorrect == "true") {
+                alert("Thanks for the message!")
+            }
+        }
+    </script>
+</body>
+</html>

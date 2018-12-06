@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kata Functions</title>
+    <link id="kata" rel="script" href="main.js">
+</head>
+
+<body>
+    <h1>Check the console log!</h1>
+    <script>
+        // Kata 1
+        function add(numOne, numTwo) {
+            return numOne + numTwo
+            var total = numOne + numTwo
+        }
+        console.log(add(2, 4))
+        // Kata 2
+        function multiply(numThree, numFour) {
+            var total = 0;
+            for (var i = 0; i < numFour; i++) {
+                total = add(total, numThree);
+            }
+            return total;
+            2
+        }
+        console.log(multiply(6, 8))
+        // Kata 3
+        function power(x, n) {
+            var total = 1;
+            for (var i = 0; i < n; i++) {
+                total = multiply(total, x);
+            }
+            return total;
+        }
+        console.log(power(2, 8))
+        // Kata 4
+        function factorial(y) {
+            var total = 1;
+            for (var i = 1; i <= y; i += 1) {
+                total = multiply(i, total)
+            }
+            return total;
+        }
+        console.log(factorial(4))
+        // Kata 5 
+        function fibonacci(n) {
+            const first = [0, 1]
+            for (var i = 2; i < n; i++) {
+                var start = first[first.length - 2]
+                var end = first[first.length - 1]
+                var number = start + end 
+                first.push(number)
+            }
+        return first[first.length - 1]
+        } 
+        console.log(fibonacci(8))
+    </script>
+
+</body>
+
+</html>
